@@ -1,0 +1,22 @@
+2023-04-11 16:02:05,202 [INFO] com.example.demo.DemoApplication [restartedMain] Starting DemoApplication using Java 11.0.18 on albanero-Ubuntu with PID 63347 (/home/albanero/Downloads/Google Keep/demo/build/classes/java/main started by albanero in /home/albanero/Downloads/Google Keep)
+2023-04-11 16:02:05,203 [INFO] com.example.demo.DemoApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-11 16:02:05,245 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-11 16:02:05,245 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-11 16:02:05,764 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'passwordEncoder' defined in class path resource [io/liquer/pencil/autoconfigure/PencilAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=io.liquer.pencil.autoconfigure.PencilAutoConfiguration; factoryMethodName=passwordEncoder; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [io/liquer/pencil/autoconfigure/PencilAutoConfiguration.class]] for bean 'passwordEncoder': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userService; factoryMethodName=passwordEncoder; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/demo/Services/UserService.class]] bound.
+2023-04-11 16:02:05,769 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-11 16:02:05,779 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'passwordEncoder', defined in class path resource [io/liquer/pencil/autoconfigure/PencilAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/example/demo/Services/UserService.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
